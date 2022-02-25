@@ -1,0 +1,51 @@
+.bar3{
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+.contenedor{
+    width: 60%;
+    margin: 0 auto;
+}
+.izq{
+    float: left;
+}
+.der{
+    float: right;
+}
+.info-h{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "fecha inicio"
+                         "logo logo"
+                         "buscar buscar";
+}
+.logo{
+    max-width: 115px;
+}
+.item1{
+    grid-area: fecha;
+}
+.item2{
+    grid-area: inicio;
+}
+.item3{
+    grid-area: logo;
+}
+.item3 img{
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+}
+.item4{
+    grid-area: buscar;
+}
+.contacto{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 90px;
+    width: 150px;
+}
